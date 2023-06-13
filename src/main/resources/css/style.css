@@ -1,0 +1,60 @@
+.table-view {
+    -fx-background-color: #7E7ED0;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: transparent;
+}
+
+.table-cell:odd {
+    -fx-background-color: #92A1D6;
+}
+
+.table-cell:even {
+    -fx-background-color: #667095;
+}
+
+.table-view .scroll-bar {
+    -fx-background-color: #3953d4;
+}
+
+.table-view .thumb {
+    -fx-background-color: #667095;
+}
+
+.table-view .column-header {
+    -fx-border-color: #3953d4;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #93a1c1;
+}
+
+.table-cell {
+    -fx-border-color: #3953d4;
+    -fx-border-width: 0.5;
+}
+
+.table-row-cell:selected .table-cell {
+    -fx-text-fill: #06498c;
+}
+
+.menu-button .menu-item {
+    -fx-background-color: #2D2C50;
+}
+
+.submit-button {
+    -fx-background-color: #7E7ED0;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #2D2C50;
+    -fx-cursor: HAND;
+}
+
+.table-view > .virtual-flow > .corner{
+    -fx-background-color: #D9D9D9;
+}
+
+.context-menu {
+    -fx-background-color: #92A1D9;
+}

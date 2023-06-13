@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1080.0" style="-fx-background-color: #7E7ED0;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.gui.AuthController">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="326.0" layoutX="409.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/image 1.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="26.0" layoutY="452.0" prefHeight="275.0" prefWidth="334.0" style="-fx-background-color: #92a1d6; -fx-background-radius: 20;">
+         <children>
+            <Label alignment="CENTER" layoutX="70.0" layoutY="47.0" prefHeight="17.0" prefWidth="194.0" text="Language" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Bold" size="17.0" />
+               </font>
+            </Label>
+            <Button layoutX="24.0" layoutY="91.0" mnemonicParsing="false" onAction="#setButton_ru" prefHeight="25.0" prefWidth="286.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 10;" text="Русский">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button layoutX="24.0" layoutY="131.0" mnemonicParsing="false" onAction="#setButton_es" prefHeight="25.0" prefWidth="286.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 10;" text="Español">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button layoutX="24.0" layoutY="173.0" mnemonicParsing="false" onAction="#setButton_hu" prefHeight="25.0" prefWidth="286.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 10;" text="Hungarian">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button layoutX="24.0" layoutY="213.0" mnemonicParsing="false" onAction="#setButton_mk" prefHeight="25.0" prefWidth="286.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 10;" text="Makedóniai">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </Pane>
+      <ImageView fitHeight="293.0" fitWidth="246.0" layoutX="84.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Hi!.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="726.0" layoutY="181.0" prefHeight="369.0" prefWidth="298.0" style="-fx-background-color: #111A3A; -fx-background-radius: 15;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#92a1d6" height="57.0" layoutX="36.0" layoutY="88.0" stroke="BLACK" strokeType="INSIDE" width="224.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#92a1d6" height="57.0" layoutX="36.0" layoutY="160.0" stroke="BLACK" strokeType="INSIDE" width="224.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#92a1d6" height="51.0" layoutX="36.0" layoutY="257.0" stroke="BLACK" strokeType="INSIDE" width="223.0" />
+            <Label fx:id="label_login" alignment="CENTER" layoutX="52.0" layoutY="32.0" prefHeight="17.0" prefWidth="194.0" text="REGISTRATION" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_login" layoutX="60.0" layoutY="102.0" prefHeight="29.0" prefWidth="177.0" promptText="Login" />
+            <PasswordField fx:id="pf_password" layoutX="60.0" layoutY="172.0" prefHeight="29.0" prefWidth="177.0" promptText="Password" />
+            <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="41.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/lock.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="Button_login" layoutX="67.0" layoutY="268.0" mnemonicParsing="false" onAction="#setButton_login" prefHeight="29.0" prefWidth="190.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="LOGIN">
+               <font>
+                  <Font name="Roboto Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="Button_signUp" layoutX="-1.0" layoutY="323.0" mnemonicParsing="false" onAction="#setButton_signUp" prefHeight="26.0" prefWidth="299.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Become a member" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

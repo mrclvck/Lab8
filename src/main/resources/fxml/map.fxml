@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1080.0" style="-fx-background-color: #7E7ED0;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.gui.MapController">
+   <children>
+      <ImageView fitHeight="152.0" fitWidth="146.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ava.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="Label_currentUser" alignment="CENTER" layoutX="239.0" layoutY="40.0" prefHeight="39.0" prefWidth="305.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 15;" text="NickName">
+         <font>
+            <Font name="Roboto Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="Button_info" layoutX="38.0" layoutY="398.0" mnemonicParsing="false" onAction="#setButton_info" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #92A1D6; -fx-background-radius: 7;" text="INFO" textFill="WHITE">
+         <font>
+            <Font name="Roboto Bold" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="Button_help" layoutX="38.0" layoutY="504.0" mnemonicParsing="false" onAction="#setButton_help" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #92A1D6; -fx-background-radius: 7;" text="HELP" textFill="WHITE">
+         <font>
+            <Font name="Roboto Bold" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="Button_table" layoutX="38.0" layoutY="451.0" mnemonicParsing="false" onAction="#setButton_table" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #92A1D6; -fx-background-radius: 7;" text="TABLE" textFill="WHITE">
+         <font>
+            <Font name="Roboto Bold" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Pane layoutX="18.0" layoutY="567.0" prefHeight="172.0" prefWidth="179.0" style="-fx-background-color: #92a1d6; -fx-background-radius: 20;">
+         <children>
+            <Label alignment="CENTER" layoutY="14.0" prefHeight="20.0" prefWidth="179.0" text="Language" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Bold" size="17.0" />
+               </font>
+            </Label>
+            <Button layoutX="12.0" layoutY="41.0" mnemonicParsing="false" onAction="#setButton_ru" prefHeight="9.0" prefWidth="155.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 10;" text="Русский">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button layoutX="12.0" layoutY="74.0" mnemonicParsing="false" onAction="#setButton_es" prefHeight="9.0" prefWidth="155.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 10;" text="Español">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button layoutX="12.0" layoutY="107.0" mnemonicParsing="false" onAction="#setButton_hu" prefHeight="9.0" prefWidth="155.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 10;" text="Hungarian">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button layoutX="12.0" layoutY="139.0" mnemonicParsing="false" onAction="#setButton_mk" prefHeight="9.0" prefWidth="155.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 10;" text="Makedóniai">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </Pane>
+      <Pane fx:id="pane_map" layoutX="286.0" layoutY="186.0" prefHeight="509.0" prefWidth="732.0" style="-fx-background-color: D9D9D9;" />
+      <Label fx:id="Label_map" alignment="CENTER" layoutX="286.0" layoutY="122.0" prefHeight="64.0" prefWidth="732.0" style="-fx-background-color: #2D2C50;" text="MAP" textFill="WHITE">
+         <font>
+            <Font name="Roboto Bold" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="iv_gif" fitHeight="150.0" fitWidth="200.0" layoutX="46.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

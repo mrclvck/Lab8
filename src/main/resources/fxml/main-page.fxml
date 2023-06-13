@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1080.0" style="-fx-background-color: #7E7ED0;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.gui.MainController">
+   <children>
+      <ImageView fitHeight="179.0" fitWidth="186.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ava.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table" layoutX="219.0" layoutY="120.0" prefHeight="550.0" prefWidth="815.0" stylesheets="@../css/style.css">
+         <columns>
+            <TableColumn fx:id="TableColumn_id" prefWidth="45.0" resizable="false" text="ID" />
+            <TableColumn fx:id="TableColumn_creator" prefWidth="76.657958984375" resizable="false" text="Creator" />
+            <TableColumn fx:id="TableColumn_coordinates" prefWidth="89.342041015625" resizable="false" text="Coordinates" />
+            <TableColumn fx:id="TableColumn_name" prefWidth="77.0" resizable="false" text="Name" />
+            <TableColumn fx:id="TableColumn_creationDate" prefWidth="180.83944702148438" resizable="false" text="Creation time" />
+            <TableColumn fx:id="TableColumn_type" prefWidth="83.16058349609375" resizable="false" text="Type" />
+            <TableColumn fx:id="TableColumn_capacity" prefWidth="88.0" resizable="false" text="Capacity" />
+            <TableColumn fx:id="TableColumn_enginePower" prefWidth="90.0" resizable="false" text="Engine Power" />
+            <TableColumn fx:id="TableColumn_fuelConsumption" prefWidth="84.0" resizable="false" text="Consumption" />
+         </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="239.0" layoutY="30.0" prefHeight="39.0" prefWidth="305.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 15;" text="NickName">
+         <font>
+            <Font name="Roboto Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="Button_add" layoutX="37.0" layoutY="249.0" mnemonicParsing="false" onAction="#setButton_add" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #92A1D6; -fx-background-radius: 7; -fx-cursor: hand;" text="ADD" textFill="WHITE">
+         <font>
+            <Font name="Roboto Bold" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="Label_currentUser" alignment="CENTER" layoutX="239.0" layoutY="30.0" prefHeight="39.0" prefWidth="305.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 15;" text="NickName">
+         <font>
+            <Font name="Roboto Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="Button_info" layoutX="37.0" layoutY="302.0" mnemonicParsing="false" onAction="#setButton_info" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #92A1D6; -fx-background-radius: 7; -fx-cursor: hand;" text="INFO" textFill="WHITE">
+         <font>
+            <Font name="Roboto Bold" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="Button_help" layoutX="37.0" layoutY="409.0" mnemonicParsing="false" onAction="#setButton_help" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #92A1D6; -fx-background-radius: 7; -fx-cursor: hand;" text="HELP" textFill="WHITE">
+         <font>
+            <Font name="Roboto Bold" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="Button_map" layoutX="37.0" layoutY="356.0" mnemonicParsing="false" onAction="#setButton_map" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #92A1D6; -fx-background-radius: 7; -fx-cursor: hand;" text="MAP" textFill="WHITE">
+         <font>
+            <Font name="Roboto Bold" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Pane layoutX="18.0" layoutY="567.0" prefHeight="172.0" prefWidth="179.0" style="-fx-background-color: #92a1d6; -fx-background-radius: 20;">
+         <children>
+            <Label alignment="CENTER" layoutY="14.0" prefHeight="20.0" prefWidth="179.0" text="Language" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Bold" size="17.0" />
+               </font>
+            </Label>
+            <Button layoutX="12.0" layoutY="41.0" mnemonicParsing="false" onAction="#setButton_ru" prefHeight="9.0" prefWidth="155.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 10; -fx-cursor: hand;" text="Русский">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button layoutX="12.0" layoutY="74.0" mnemonicParsing="false" onAction="#setButton_es" prefHeight="9.0" prefWidth="155.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 10; -fx-cursor: hand;" text="Español">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button layoutX="12.0" layoutY="107.0" mnemonicParsing="false" onAction="#setButton_hu" prefHeight="9.0" prefWidth="155.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 10; -fx-cursor: hand;" text="Hungarian">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button layoutX="12.0" layoutY="139.0" mnemonicParsing="false" onAction="#setButton_mk" prefHeight="9.0" prefWidth="155.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 10; -fx-cursor: hand;" text="Makedóniai">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </Pane>
+      <Button fx:id="Button_exit" alignment="CENTER_RIGHT" layoutX="894.0" layoutY="737.0" mnemonicParsing="false" onAction="#setButton_exit" prefHeight="33.0" prefWidth="186.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="EXIT" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <MenuButton fx:id="MenuButton_all" alignment="CENTER" layoutX="37.0" layoutY="462.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="140.0" style="-fx-background-radius: 7; -fx-background-color: #92A1D6; -fx-cursor: hand;" text="ALL" textAlignment="CENTER" textFill="WHITE">
+         <items>
+            <MenuItem mnemonicParsing="false" style="-fx-background-color: transparent;">
+               <graphic>
+                  <Button fx:id="Button_count" mnemonicParsing="false" onAction="#setButton_count" style="-fx-background-color: #92A1D6; -fx-background-radius: 7; -fx-cursor: hand;" text="COUNT GREATER THAN TYPE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </graphic>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false" style="-fx-background-color: transparent;">
+               <graphic>
+                  <Button fx:id="Button_executeScript" mnemonicParsing="false" onAction="#setButton_executeScript" style="-fx-background-color: #92A1D6; -fx-background-radius: 7; -fx-cursor: hand;" text="EXECUTE SCRIPT">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </graphic>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false" style="-fx-background-color: transparent;">
+               <graphic>
+                  <Button fx:id="Button_removeAllByType" mnemonicParsing="false" onAction="#setButton_removeAllByType" style="-fx-background-color: #92A1D6; -fx-background-radius: 7; -fx-cursor: hand;" text="REMOVE ALL BY TYPE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </graphic>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false" style="-fx-background-color: transparent;">
+               <graphic>
+                  <Button fx:id="Button_clear" mnemonicParsing="false" onAction="#setButton_clear" style="-fx-background-color: #92A1D6; -fx-background-radius: 7; -fx-cursor: hand;" text="CLEAR">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </graphic>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false" style="-fx-background-color: transparent;">
+               <graphic>
+                  <Button fx:id="Button_removeById" mnemonicParsing="false" onAction="#setButton_removeById" style="-fx-background-color: #92A1D6; -fx-background-radius: 7; -fx-cursor: hand;" text="REMOVE BY ID">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </graphic>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false" style="-fx-background-color: transparent;">
+               <graphic>
+                  <Button fx:id="Button_update" mnemonicParsing="false" onAction="#setButton_update" style="-fx-background-color: #92A1D6; -fx-background-radius: 7; -fx-cursor: hand;" text="UPDATE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </graphic>
+            </MenuItem>
+         </items>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </MenuButton>
+   </children>
+</AnchorPane>
